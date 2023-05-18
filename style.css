@@ -107,6 +107,75 @@ body {
   color: white;
 }
 
+.result{
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#image{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  visibility: hidden;
+}
+
+#image img{
+  width:fit-content;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 25%;
+  visibility: hidden;
+}
+
+#city-info h2{
+  font-size: 40px;
+  font-family: 'Teko', sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#city-info p{
+  font-size: 20px;
+  font-family: 'Teko', sans-serif;
+  color: #fff;
+}
+
+#weather-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin-right: 50%;
+}
+
+#weather-info h2{
+  font-size: 40px;
+  font-family: 'Teko', sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#weather-info p{
+  font-size: 20px;
+  font-family: 'Teko', sans-serif;
+  color: #fff;
+}
 
 
 
