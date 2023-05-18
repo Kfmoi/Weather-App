@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500&family=Ubuntu:wght@500&display=swap');
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
+
+.header {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+}
+
+.header h1{
+  align-items: center;
+  font-size: 70px;
+  font-family: 'Teko', sans-serif;
+  color: #fff;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px #fff;
+}
+
+#reset{
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  color: black;
+  font-size: 30px;
+  font-family: 'Teko', sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+#reset:hover{
+  background-color: darkcyan;
+  color: white;
+}
+
+#reset:active{
+  background-color: darkcyan;
+  color: white;
+}
+
+
+
+
