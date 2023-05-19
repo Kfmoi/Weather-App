@@ -62,3 +62,54 @@ body {
   background:cornflowerblue;
 }
 
+.weather{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon{
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather h1{
+  font-size: 80px;
+  font-weight: 500;
+  color: #222;
+}
+
+.weather h2{
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -20px;
+  color: #222;
+}
+
+.weather-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.col img{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity, .wind{
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+
