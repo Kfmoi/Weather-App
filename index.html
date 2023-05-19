@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Weather Network 2.0</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <meta name="viewport">
     </head>
 
@@ -13,20 +13,23 @@
                 <input type="text" placeholder="Enter City Name" spellcheck="true">
                 <button><img src="images/searchicon.png"></button>
             </div>
+            <div class="error">
+                <p>City Not Found</p>
+            </div>
             <div class="weather">
                 <img src="images/cloudy.png" class="weather-icon">
                 <h1 class="temperature">27</h1>
                 <h2 class="city">Cairo</h2>
                 <div class="weather-details">
                     <div class="col">
-                        <img src="images/placeholder.jpg">
+                        <img src="images/humidity.png">
                         <div>
                             <p class="humidity">50%</p>
                             <p>Humidity</p>
                         </div>
                     </div>
                     <div class="col">
-                        <img src="images/placeholder.jpg">
+                        <img src="images/wind.png">
                         <div>
                             <p class="wind">20km/h</p>
                             <p>Wind Speed</p>
@@ -35,6 +38,7 @@
                 </div>
             </div>
         </div>
+        <script src="script/script.js"></script>
     </body>
 
 
