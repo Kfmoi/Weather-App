@@ -9,9 +9,9 @@ async function getWeather(city) {
     if (response.status == 404) {
         document.querySelector(".error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
+        document.querySelector(".read-more").style.display = "none";
     } else{
     var data = await response.json();
-    console.log(data);
 
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temperature").innerHTML = Math.round(data.main.temp) + "°C";
@@ -33,6 +33,8 @@ async function getWeather(city) {
     }
 
     document.querySelector(".weather").style.display = "block";
+    document.querySelector(".read-more").style.display = "block";
+    document.querySelector(".error").style.display = "none";
 }
 
 }
