@@ -128,3 +128,25 @@ body {
   display: none;
 }
 
+.read-more{
+  display: none;
+}
+
+.read-more button{
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.read-more button:hover{
+  background:cornflowerblue;
+}
+
+
