@@ -120,6 +120,8 @@ body {
   margin-left: 20px;
 }
 
+
+
 .col img{
   width: 40px;
   margin-right: 10px;
@@ -132,6 +134,57 @@ body {
 
 .weather{
   display: none;
+}
+
+.more-title h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #222;
+}
+
+.more-title hr{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #222;
+  margin-top: -3px;
+}
+
+.more-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 px;
+  margin-top: 0px;
+  color: #222;
+}
+
+.col2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 35px;
+  margin-left: 30px;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.right{
+  border-left: 2px solid #222;
+}
+
+.right-text{
+  margin-left: 35px;
+  margin-right: 20px;
+  font-size: 20px;
+  text-align: left;
+
+}
+
+.left{
+  margin-right: -20px;
 }
 
 .error{
