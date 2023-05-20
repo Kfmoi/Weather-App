@@ -5,6 +5,7 @@ const btn = document.querySelector(".search button");
 const icon = document.querySelector(".weather-icon");
 const countAPI = "http://api.weatherapi.com/v1/current.json?q="
 const countKey = "be464b2cfbd9441c8b8192831232005";
+const more = document.querySelector(".read-more button");
 
 async function getWeather(city) {
     const response = await fetch(apiURL + city + `&appid=` + apiKey);
@@ -25,6 +26,13 @@ async function getWeather(city) {
     document.querySelector(".temperature").innerHTML = Math.round(data.main.temp) + "°C";
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
+    document.querySelector(".gust").innerHTML = "Gust Speed(km/h): " + data2.current.gust_kph;
+    document.querySelector(".prec").innerHTML = "Precipitation(mm): " + data2.current.precip_mm;
+    document.querySelector(".vis").innerHTML = "Visibility(km): " + data2.current.vis_km;
+    document.querySelector(".wind-dir").innerHTML = "Wind Direction: " + data2.current.wind_dir;
+    document.querySelector(".wind-deg").innerHTML = "Wind Degree: " + data2.current.wind_degree + "°";
+    document.querySelector(".pres").innerHTML = "Pressure(mb): " + data2.current.pressure_mb;
+
 
     if (data.weather[0].main == "Clouds") {
         icon.src = "images/cloudy.png";
@@ -49,4 +57,16 @@ async function getWeather(city) {
 
 btn.addEventListener("click", () => {
     getWeather(search.value);
+});
+
+more.addEventListener("click", () => {
+    if (document.querySelector(".read-more button").innerHTML == "Collapse") {
+        document.querySelector(".more-title").style.display = "none";
+        document.querySelector(".more-info").style.display = "none";
+        document.querySelector(".read-more button").innerHTML = "More Info";
+    } else {
+    document.querySelector(".more-title").style.display = "block";
+    document.querySelector(".more-info").style.display = "flex";
+    document.querySelector(".read-more button").innerHTML = "Collapse";
+    }
 });
