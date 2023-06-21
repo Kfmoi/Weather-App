@@ -1,10 +1,11 @@
-const apiKey = "eddd83c8e0964752ec3d4713e5467e4d";
+
+const apiKey = process.env.API_KEY;
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const search = document.querySelector(".search input");
 const btn = document.querySelector(".search button");
 const icon = document.querySelector(".weather-icon");
 const countAPI = "http://api.weatherapi.com/v1/current.json?q="
-const countKey = "be464b2cfbd9441c8b8192831232005";
+const countKey = process.env.COUNT_KEY;
 const more = document.querySelector(".read-more button");
 
 async function getWeather(city) {
