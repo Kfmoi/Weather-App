@@ -15,10 +15,10 @@ To make use of the weather data, this app relies on a weather API. However, in o
 
     1. Open the script.js file in a text editor of your choice.
     2. Look for the following line of code:
-    ```
+    
     const apiKey = 'YOUR_API_KEY';
     const countKey = 'YOUR_API_KEY';
-    ```
+    
     3. Replace 'YOUR_API_KEY' with your actual API key.
 
 ## Using the App
